@@ -5,7 +5,7 @@
 
 ### By Going Online:
 
-Host on GitHub Pages : danbertrand.github.io/fiber-project/
+Host on GitHub Pages : https://danbertrand.github.io/fiber-project/
 
 ### By Cloning the repository :
 
