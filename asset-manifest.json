@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/fiber-project/static/css/main.ca6ede6d.chunk.css",
-    "main.js": "/fiber-project/static/js/main.5c099837.chunk.js",
-    "main.js.map": "/fiber-project/static/js/main.5c099837.chunk.js.map",
-    "runtime-main.js": "/fiber-project/static/js/runtime-main.7959de96.js",
-    "runtime-main.js.map": "/fiber-project/static/js/runtime-main.7959de96.js.map",
-    "static/js/2.249f8572.chunk.js": "/fiber-project/static/js/2.249f8572.chunk.js",
-    "static/js/2.249f8572.chunk.js.map": "/fiber-project/static/js/2.249f8572.chunk.js.map",
-    "static/js/3.56ead0ad.chunk.js": "/fiber-project/static/js/3.56ead0ad.chunk.js",
-    "static/js/3.56ead0ad.chunk.js.map": "/fiber-project/static/js/3.56ead0ad.chunk.js.map",
+    "main.css": "/fiber-project/static/css/main.de5d807b.chunk.css",
+    "main.js": "/fiber-project/static/js/main.48902e93.chunk.js",
+    "main.js.map": "/fiber-project/static/js/main.48902e93.chunk.js.map",
+    "runtime-main.js": "/fiber-project/static/js/runtime-main.c414549c.js",
+    "runtime-main.js.map": "/fiber-project/static/js/runtime-main.c414549c.js.map",
+    "static/js/2.d3cc1d3d.chunk.js": "/fiber-project/static/js/2.d3cc1d3d.chunk.js",
+    "static/js/2.d3cc1d3d.chunk.js.map": "/fiber-project/static/js/2.d3cc1d3d.chunk.js.map",
     "index.html": "/fiber-project/index.html",
-    "static/css/main.ca6ede6d.chunk.css.map": "/fiber-project/static/css/main.ca6ede6d.chunk.css.map",
-    "static/js/2.249f8572.chunk.js.LICENSE.txt": "/fiber-project/static/js/2.249f8572.chunk.js.LICENSE.txt"
+    "static/css/main.de5d807b.chunk.css.map": "/fiber-project/static/css/main.de5d807b.chunk.css.map",
+    "static/js/2.d3cc1d3d.chunk.js.LICENSE.txt": "/fiber-project/static/js/2.d3cc1d3d.chunk.js.LICENSE.txt",
+    "static/media/Concrete_Wall_001_ambient_occlusion.5ea387a3.jpg": "/fiber-project/static/media/Concrete_Wall_001_ambient_occlusion.5ea387a3.jpg",
+    "static/media/Concrete_Wall_001_basecolor.e05b2082.jpg": "/fiber-project/static/media/Concrete_Wall_001_basecolor.e05b2082.jpg",
+    "static/media/Concrete_Wall_001_normal.f4d60b55.jpg": "/fiber-project/static/media/Concrete_Wall_001_normal.f4d60b55.jpg",
+    "static/media/Concrete_Wall_001_roughness.93170752.jpg": "/fiber-project/static/media/Concrete_Wall_001_roughness.93170752.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7959de96.js",
-    "static/js/2.249f8572.chunk.js",
-    "static/css/main.ca6ede6d.chunk.css",
-    "static/js/main.5c099837.chunk.js"
+    "static/js/runtime-main.c414549c.js",
+    "static/js/2.d3cc1d3d.chunk.js",
+    "static/css/main.de5d807b.chunk.css",
+    "static/js/main.48902e93.chunk.js"
   ]
 }
