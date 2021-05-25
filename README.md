@@ -34,5 +34,6 @@ yarn start
 Go see in ur favorite browser with a click [here](http://localhost:3000/)
 
 
+Sources:
 
-
+Copyright � 2004 by MAGENTA Ltd. All Rights Reserved.
