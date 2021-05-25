@@ -1,5 +1,4 @@
-import { Suspense } from "react";
-import Project1 from "./Project1";
+import Project1 from "./Components/Project1";
 import "./App.scss";
 import Header from "./Components/Header";
 
