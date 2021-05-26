@@ -8,7 +8,6 @@ import Tree from "./Tree";
 import Ground from "./Ground";
 import Tree2 from "./Tree2";
 import MapleTree from "./MapleTree";
-import Tree3 from "./Tree3";
 
 const Project1 = () => {
   const wall = useRef();
@@ -41,7 +40,6 @@ const Project1 = () => {
           <group ref={wall}>
             <Tree scale={0.6} position={[-10, -4.4, 4]} roughness={0.01} />
             <Tree2 scale={0.6} position={[10, -4.4, -8]} roughness={0.01} />
-            <Tree3 scale={3} position={[-8, -4.4, -10]} roughness={0.01} />
             <MapleTree scale={55} position={[14, -4.5, 14]} roughness={0.01} />
 
             <FrontText position={[0, 0, 4]} scale={0.06} color={"orange"} />
