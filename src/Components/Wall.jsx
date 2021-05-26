@@ -8,7 +8,7 @@ import roughnessTexture from "../textures/Concrete_Wall_001_SD/Concrete_Wall_001
 import aoTexture from "../textures/Concrete_Wall_001_SD/Concrete_Wall_001_ambient_occlusion.jpg";
 
 const Wall = ({ args, position, scale }) => {
-  const mesh = useRef();
+  const wall = useRef();
 
   const [colorMap, normalMap, roughnessMap, aoMap] = useLoader(TextureLoader, [
     colorTexture,
@@ -18,7 +18,7 @@ const Wall = ({ args, position, scale }) => {
   ]);
 
   return (
-    <mesh scale={scale} ref={mesh} position={position} receiveShadow castShadow>
+    <mesh scale={scale} ref={wall} position={position} receiveShadow castShadow>
       <boxBufferGeometry attach="geometry" args={args} />
       <meshStandardMaterial
         map={colorMap}
