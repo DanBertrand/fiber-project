@@ -14,19 +14,13 @@ const MapleLeaf1 = ({
   positionY,
 }) => {
   const leaf = useRef();
-
   const [colorMap, aoMap] = useLoader(TextureLoader, [colorTexture, aoTexture]);
 
-  let count = 0;
-
   useFrame(() => {
-    count += 1;
-    if (count < 530) {
-      leaf.current.rotation.x += 0.1 * rotationX;
-      leaf.current.rotation.y += 0.1 * rotationY;
-      leaf.current.position.x -= 0.1 * positionX;
-      leaf.current.position.y -= 0.2 * positionY;
-    }
+    leaf.current.rotation.x += 0.1 * rotationX;
+    leaf.current.rotation.y += 0.1 * rotationY;
+    leaf.current.position.x -= 0.1 * positionX;
+    leaf.current.position.y -= 0.2 * positionY;
   });
 
   return (
