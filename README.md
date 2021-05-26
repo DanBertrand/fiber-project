@@ -1,5 +1,8 @@
 # React-three-fiber Project (Three.js integration into react-app)
 
+| :warning: WARNING          |
+|:---------------------------|
+| Project in development     |
 
 ## How to use it :
 
