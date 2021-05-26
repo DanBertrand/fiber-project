@@ -5,11 +5,16 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import treeModel from "../models/mapleTree.glb";
 
 const MapleTree = ({ scale, position, roughness }) => {
-  const gltf = useLoader(GLTFLoader, treeModel);
+  const mapleTree = useLoader(GLTFLoader, treeModel);
+
+  if (mapleTree) {
+    console.log("mapleTree", mapleTree);
+    console.log("mapleTree Scene", mapleTree.scene);
+  }
 
   return (
     <Suspense fallback={null}>
-      <primitive object={gltf.scene} scale={scale} position={position} />
+      <primitive object={mapleTree.scene} scale={scale} position={position} />
     </Suspense>
   );
 };
