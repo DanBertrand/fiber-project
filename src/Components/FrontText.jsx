@@ -1,9 +1,13 @@
 import React from "react";
+import { useFrame } from "@react-three/fiber";
 import { FontLoader } from "three";
 import Raleway from "../fonts/Raleway.json";
+import { useRef } from "react";
 
 const FrontText = ({ position, color, rotation, scale }) => {
   const font = new FontLoader().parse(Raleway);
+
+  const groupText = useRef();
 
   const text1 = "Viele kleine leute die in".toUpperCase();
   const text2 = "Vielen kleinen orten".toUpperCase();
@@ -22,7 +26,7 @@ const FrontText = ({ position, color, rotation, scale }) => {
   };
 
   return (
-    <group scale={scale} position={position}>
+    <group ref={groupText} scale={scale} position={position}>
       <mesh
         position={[-72.43147941968631, 0, 0]}
         rotation={rotation}
