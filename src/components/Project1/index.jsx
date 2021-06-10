@@ -29,7 +29,7 @@ const Project1 = ({ isLoaded }) => {
         <ReactLoading type='spin' color='grey' height={50} width={50} />
       </div>
     }
-      <Canvas shadows camera={{ position: [-20, 3, 40], fov: 45 }}>
+      <Canvas shadows camera={{ position: [5, 3, 30], fov: 45 }}>
         <hemisphereLight intensity={0.1} />
         <directionalLight
           castShadow
@@ -113,7 +113,10 @@ const Project1 = ({ isLoaded }) => {
             <Ground />
           </group>
         </Suspense>
-        <OrbitControls autoRotate />
+        {loaded && 
+          <OrbitControls autoRotate />
+        }
+       
       </Canvas>
     </>
   );
