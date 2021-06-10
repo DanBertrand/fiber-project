@@ -8,8 +8,8 @@
 
 ### By Going Online:
 
-Host on GitHub Pages : https://danbertrand.github.io/fiber-project/
-Deployed on Vercel : https://fiber-project-9h0hmns9t-danbertrand.vercel.app/
+- Host on GitHub Pages : https://danbertrand.github.io/fiber-project/
+- Deployed on Vercel : https://fiber-project-9h0hmns9t-danbertrand.vercel.app/
 
 ### By Cloning the repository :
 
