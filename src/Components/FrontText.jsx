@@ -1,5 +1,5 @@
 import React from "react";
-import { useFrame } from "@react-three/fiber";
+// import { useFrame } from "@react-three/fiber";
 import { FontLoader } from "three";
 import Raleway from "../fonts/Raleway.json";
 import { useRef } from "react";

@@ -7,7 +7,7 @@ import normalTexture from "../textures/GroundForest008/REGULAR/6K/GroundForest00
 import displacementTexture from "../textures/GroundForest008/REGULAR/6K/GroundForest008_DISP_6K.jpg";
 import aoTexture from "../textures/GroundForest008/REGULAR/6K/GroundForest008_AO_6K.jpg";
 import roughnessTexture from "../textures/GroundForest008/REGULAR/6K/GroundForest008_GLOSS_6K.jpg";
-import { NearestFilter, RepeatWrapping } from "three";
+import { RepeatWrapping } from "three";
 
 const Ground = ({ args, position, scale }) => {
   const Ground = useRef();
