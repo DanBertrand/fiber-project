@@ -7,10 +7,10 @@ import treeModel from "../models/mapleTree.glb";
 const MapleTree = ({ scale, position, roughness }) => {
   const mapleTree = useLoader(GLTFLoader, treeModel);
 
-  if (mapleTree) {
-    console.log("mapleTree", mapleTree);
-    console.log("mapleTree Scene", mapleTree.scene);
-  }
+  // if (mapleTree) {
+  //   console.log("mapleTree", mapleTree);
+  //   console.log("mapleTree Scene", mapleTree.scene);
+  // }
 
   return (
     <Suspense fallback={null}>

@@ -1,7 +1,9 @@
+import './project1.scss'
+import ReactLoading from "react-loading";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import FrontText from "./FrontText";
-import { Suspense, useRef } from "react";
+import { Suspense, useCallback, useState } from "react";
 import BackText from "./BackText";
 import Wall from "./Wall";
 import Tree from "./Tree";
@@ -10,11 +12,23 @@ import Tree2 from "./Tree2";
 import MapleTree from "./MapleTree";
 import MapleLeaf1 from "./MapleLeaf1";
 
-const Project1 = () => {
-  const wall = useRef();
+const Project1 = ({ isLoaded }) => {
+  const [loaded, setLoaded] = useState(false)
+
+  const measuredRef = useCallback(node => {
+    if (node !== null) {
+      setLoaded(true)
+    }
+  }, []);
 
   return (
     <>
+    {!loaded && 
+      <div className="loading-module">
+        Loading ...
+        <ReactLoading type='spin' color='grey' height={50} width={50} />
+      </div>
+    }
       <Canvas shadows camera={{ position: [-6, 2, 70], fov: 45 }}>
         <hemisphereLight intensity={0.1} />
         <directionalLight
@@ -38,7 +52,7 @@ const Project1 = () => {
         />
 
         <Suspense fallback={null}>
-          <group ref={wall}>
+          <group ref={measuredRef} >
             <Tree scale={0.6} position={[-10, -4.4, 4]} roughness={0.01} />
             <Tree2 scale={0.6} position={[10, -4.4, -8]} roughness={0.01} />
 

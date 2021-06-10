@@ -7,10 +7,7 @@ import treeModel from "../models/uploads_files_2551085_tree.glb";
 const Tree = ({ scale, position, roughness }) => {
   const gltf = useLoader(GLTFLoader, treeModel);
 
-  console.log("treeModel", treeModel);
-
   if (gltf) {
-    console.log("tree", gltf.nodes.Cube);
     gltf.nodes.Cube.castShadow = true;
     gltf.nodes.Cube.receiveShadow = true;
     gltf.nodes.Cube.roughness = { roughness };
