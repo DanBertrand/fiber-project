@@ -1,12 +1,12 @@
-# React-three-fiber Project (Three.js integration into react-app)
+# React-three-fiber Project
 
 - Host on GitHub Pages : https://danbertrand.github.io/fiber-project/
 - Deployed on Vercel : https://fiber-project-9h0hmns9t-danbertrand.vercel.app/
 
+
 | :warning: WARNING          |
 |:---------------------------|
 | Project in development     |
-
 
 
 
