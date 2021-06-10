@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { TextureLoader } from "three/src/loaders/TextureLoader.js";
 import { useLoader, useFrame } from "@react-three/fiber";
-import colorTexture from "../textures/MapleLeaves/ASWEETGUM10.png";
-import aoTexture from "../textures/MapleLeaves/ASWEETGUM10_oc.jpg";
+import colorTexture from "textures/MapleLeaves/ASWEETGUM10.png";
+import aoTexture from "textures/MapleLeaves/ASWEETGUM10_oc.jpg";
 import { DoubleSide } from "three";
 
 const MapleLeaf1 = ({

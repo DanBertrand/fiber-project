@@ -1,14 +1,18 @@
 import React from "react";
+// import { useFrame } from "@react-three/fiber";
 import { FontLoader } from "three";
-import Raleway from "../fonts/Raleway.json";
+import Raleway from "../../fonts/Raleway.json";
+import { useRef } from "react";
 
-const BackText = ({ position, text, color, rotation, scale }) => {
+const FrontText = ({ position, color, rotation, scale }) => {
   const font = new FontLoader().parse(Raleway);
 
-  const text1 = "MANY SMALL PEOPLE WHO IN";
-  const text2 = "MANY SMALL PLACES DO";
-  const text3 = "MANY SMALL THINGS";
-  const text4 = "THAT CAN ALTER THE FACE OF THE WORLD";
+  const groupText = useRef();
+
+  const text1 = "Viele kleine leute die in".toUpperCase();
+  const text2 = "Vielen kleinen orten".toUpperCase();
+  const text3 = "Viele kleine dinge tun,".toUpperCase();
+  const text4 = "Können das gesicht der welt verändern".toUpperCase();
 
   const textOptions = {
     font,
@@ -22,39 +26,39 @@ const BackText = ({ position, text, color, rotation, scale }) => {
   };
 
   return (
-    <group scale={scale} position={position}>
+    <group ref={groupText} scale={scale} position={position}>
       <mesh
-        position={[80.5176376518733, 0, 0]}
+        position={[-72.43147941968631, 0, 0]}
         rotation={rotation}
-        castShadow
         receiveShadow
+        castShadow
       >
         <textGeometry attach="geometry" args={[text1, textOptions]} />
         <meshStandardMaterial attach="material" color={color} />
       </mesh>
       <mesh
-        position={[67.44339179394206, -11, 0]}
+        position={[-64.82084710670225, -10, 0]}
         rotation={rotation}
-        castShadow
         receiveShadow
+        castShadow
       >
         <textGeometry attach="geometry" args={[text2, textOptions]} />
         <meshStandardMaterial attach="material" color={color} />
       </mesh>
       <mesh
-        position={[58.09688874502937, -20, 0]}
+        position={[-69.37245579380547, -20, 0]}
         rotation={rotation}
-        castShadow
         receiveShadow
+        castShadow
       >
         <textGeometry attach="geometry" args={[text3, textOptions]} />
         <meshStandardMaterial attach="material" color={color} />
       </mesh>
       <mesh
-        position={[117.10305406884478, -30, 0]}
+        position={[-125.76339178635322, -30, 0]}
         rotation={rotation}
-        castShadow
         receiveShadow
+        castShadow
       >
         <textGeometry attach="geometry" args={[text4, textOptions]} />
         <meshStandardMaterial attach="material" color={color} />
@@ -63,4 +67,4 @@ const BackText = ({ position, text, color, rotation, scale }) => {
   );
 };
 
-export default BackText;
+export default FrontText;

@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
-import treeModel from "../models/uploads_files_2551085_tree2.glb";
+import treeModel from "models/uploads_files_2551085_tree2.glb";
 
 const Tree2 = ({ scale, position, roughness }) => {
   const gltf = useLoader(GLTFLoader, treeModel);

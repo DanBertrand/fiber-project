@@ -1,6 +1,6 @@
-import Project1 from "./Components/Project1";
+import Project1 from "components/Project1";
 import "./App.scss";
-import Header from "./Components/Header";
+import Header from "components/Header";
 
 function App() {
   return (

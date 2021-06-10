@@ -1,16 +1,16 @@
-import './project1.scss'
+import './index.scss'
 import ReactLoading from "react-loading";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import FrontText from "./FrontText";
+import FrontText from "../text/FrontText";
 import { Suspense, useCallback, useState } from "react";
-import BackText from "./BackText";
-import Wall from "./Wall";
-import Tree from "./Tree";
-import Ground from "./Ground";
-import Tree2 from "./Tree2";
-import MapleTree from "./MapleTree";
-import MapleLeaf1 from "./MapleLeaf1";
+import BackText from "../text/BackText";
+import Wall from "../Wall";
+import Tree from "../trees/Tree";
+import Ground from "../Ground";
+import Tree2 from "../trees/Tree2";
+import MapleTree from "../trees/MapleTree";
+import MapleLeaf1 from "../MapleLeaf/";
 
 const Project1 = ({ isLoaded }) => {
   const [loaded, setLoaded] = useState(false)
@@ -29,7 +29,7 @@ const Project1 = ({ isLoaded }) => {
         <ReactLoading type='spin' color='grey' height={50} width={50} />
       </div>
     }
-      <Canvas shadows camera={{ position: [-6, 2, 70], fov: 45 }}>
+      <Canvas shadows camera={{ position: [-20, 3, 40], fov: 45 }}>
         <hemisphereLight intensity={0.1} />
         <directionalLight
           castShadow
