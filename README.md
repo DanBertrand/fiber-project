@@ -34,7 +34,7 @@ yarn start
 
 ##### Its Up !
 
-Go see in ur favorite browser with a click [here](http://localhost:3000/)
+Go see in your favorite browser with a click [here](http://localhost:3000/)
 
 
 Sources:
